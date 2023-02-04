@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS-1.css">
+    <link rel="stylesheet" href="CSS-2.css">
+    <link rel="stylesheet" href="Style-1.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "emoji-release.min.js"
+            }
+        };
+        ! function (e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function () {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <link rel="stylesheet" id="wp-block-library-css" href="Style-2.css" media="all" />
+    <link rel="stylesheet" id="layouts-style-css" href="Style.css" media="all" />
+    <link rel="stylesheet" id="recent-posts-widgets-with-thumbnails-public-style-css" href="Public.css" media="all" />
+    <link rel="stylesheet" id="fm-frontend-css" href="Menu.css" media="all" />
+    <link rel="https://api.w.org/" href="portfolio.json" />
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body id="top-gap-fixed-header"
+    class="home page-template page-template-page-templates page-template-template-homepage page-template-page-templatestemplate-homepage-php page page-id-8 no-sidebar">
+    <style>
+        span.icon.-back span.fa {
+            position: static;
+            color: #e6ebff;
+        }
+
+        #DemoBar.demo-bar {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            padding: 40px 5px 10px;
+            padding-top: 70px;
+            background: #0D1326;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+        }
+
+        #DemoBar.demo-bar a {
+            display: block;
+            color: #e6ebff;
+            text-decoration: none;
+            line-height: 24px;
+            opacity: .6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #DemoBar.demo-bar span.icon {
+            display: block;
+        }
+
+        #DemoBar.demo-bar a:hover {
+            opacity: 1;
+        }
+
+        #DemoBar.demo-bar .icon svg {
+            color: #e6ebff;
+        }
+
+        #DemoBar.demo-bar .responsive-icons {
+            margin-top: 30px;
+            border-top: 1px solid #41414d;
+            padding-top: 40px;
+        }
+
+        #DemoBar.demo-bar .demo-btns {
+            border-top: 1px solid #41414d;
+            padding-top: 30px;
+        }
+
+        #DemoBar.demo-bar .responsive-icons a span.fa {
+            font-size: 26px;
+        }
+
+        #DemoBar.demo-bar .no-margin-bottom {
+            margin-bottom: 0;
+        }
+
+        .toggle-right-sidebar span {
+            background: #0D1326;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #e6ebff;
+            border-radius: 50px;
+            font-size: 26px;
+            cursor: pointer;
+            opacity: .5;
+        }
+
+        .pull-right-demo-bar {
+            float: right;
+            position: fixed;
+            right: 0px;
+            top: 150px;
+            width: 90px;
+            z-index: 99999;
+            text-align: center;
+        }
+
+        #right-sidebar {
+            width: 90px;
+            position: fixed;
+            z-index: 1000;
+            right: 0px;
+            top: 0;
+            margin-top: 140px;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            overflow-y: auto;
+        }
+
+        .hide-right-bar-notifications {
+            margin-right: -300px !important;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        @media (max-width: 992px) {
+            #DemoBar.demo-bar a.desktop-mode {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #DemoBar.demo-bar a.tablet-mode {
+                display: none;
+            }
+        }
+
+        @media (max-width: 568px) {
+            #DemoBar.demo-bar a.mobile-mode {
+                display: none;
+            }
+
+            #DemoBar.demo-bar .responsive-icons {
+                margin-top: 0px;
+                border-top: none;
+                padding-top: 0px;
+            }
+
+            #right-sidebar,
+            .pull-right-demo-bar {
+                width: 90px;
+            }
+
+            #DemoBar.demo-bar .no-margin-bottom-mobile {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    <header id="site-header" class="main-header fixed-top">
+        <div class="container HeaderLogoEd">
+            <nav class="navbar navbar-expand-lg navbar-light stroke">
+                <h1>
+                    <a class="navbar-brand" href="#">
+                        <span>My Portfolio</span>
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul id="primary-menu" class="navbar-nav ml-auto">
+                        <li id="menu-item-17"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-17 nav-item active">
+                            <a href="#" class="nav-link active">Home</a></li>
+                        <li id="menu-item-18"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item"><a
+                                href="#about" class="nav-link">My Portfolio</a></li>
+                        <li id="menu-item-19"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19 nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                id="navbar-dropdown-menu-link-19" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-19">
+                                <a href="Blogs.html" target="_blank" class="dropdown-item" id="menu-item-22">Blog
+                                    Posts</a>
+                                <a href="Projects.html" target="_blank" class="dropdown-item" id="menu-item-20">My
+                                    Projects</a>
+                            </div>
+                        </li>
+                        <li id="menu-item-21"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21 nav-item"><a
+                                href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="ToggleMenu ml-auto">
+                        <a href="#menu" class="domain" data-toggle="modal" data-target="#DomainModal">
+                            <div class="hamburger">
+                                <span class="top-bar"></span>
+                                <span class="middle-bar"></span>
+                                <span class="bottom-bar"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-position ml-lg-2 text-center DarkandLight">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+
+                <div class="modal-body">
+                    <div class="modal__content">
+                        <a class="navbar-brand"> <span>My Portfolio </span></a>
+                        <p class="mt-md-3 mt-2">I Would Love to make your Ideas real. Contact me and we will discuss
+                            your projects! </p>
+
+                        <img src="banner.png" alt="" class="img-fluid mt-5">
+
+                        <div class="widget-social-icons mt-sm-5 mt-4">
+                            <ul class="icon-rounded address">
+                                <li class="mt-2">
+                                    <p><a href="mailto:ayushyakmrsingh@gmail.com">
+                                            ayushyakmrsingh@gmail.com</a></p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="widget-social-icons mt-sm-5 mt-4">
+                            <ul class="follow-social">
+                                <li>
+                                    <a href="https://www.facebook.com/ayushyakmrsingh" class="facebook" target="_blank">
+                                        <i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/ayushyakmrsingh" class="twitter" target="_blank">
+                                        <i class="fab fa-twitter-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com" class="linkedin" target="_blank">
+                                        <i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/ayushyasingh" class="github" target="_blank">
+                                        <i class="fab fa-github-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/ayushyakmrsingh" class="instagram"
+                                        target="_blank">
+                                        <i class="fab fa-instagram-square"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-fixed-space-height"></div>
+    <div class="header-gap"></div>
+    <section id="Home" class="banner pb-5">
+        <div class="container pb-md-3 HomePageHeroHeader">
+            <div class="banner-wrapper text-center">
+                <div class="">
+                    <span class="text">Myself</span>
+                    <h1 class="mb-4 title">
+                        Hello, <span class="type-js">
+                            <span class="text-js">I'm Ayushya Singh</span>
+                        </span><br>I'm working as a Web Developer.</h1>
+                    <p class="mx-lg-5">I Love <strong>Coding</strong> and <strong>Programming</strong> and have been
+                        working on my Portfolio since 2022. I can give your business a new Creative start right now!
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-lg-auto col-md-10">
+                        <img src="banner.png" alt="" class="img-fluid mt-lg-5 mt-3">
+                    </div>
+                </div>
+                <ul class="follow-social">
+                    <li>
+                        <p>Follow me </p>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/ayushyakmrsingh" class="facebook" target="_blank">
+                            <i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/ayushyakmrsingh" class="twitter" target="_blank">
+                            <i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" class="linkedin" target="_blank">
+                            <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ayushyasingh" class="github" target="_blank">
+                            <i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ayushyakmrsingh" class="instagram" target="_blank">
+                            <i class="fab fa-instagram-square"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="homeblock1" id="about">
+        <div class="midd py-5">
+            <div class="container py-lg-5 py-md-3 HPServices">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="text">My Services</span>
+                        <h3 class="title-big">
+                            <span>Build your brand</span> and grow your business
+                        </h3>
+                        <p class="mt-4">I can give your business a new creative start right away! You can download my
+                            resume in order to learn the details of my professional life as a designer and entrepreneur.
+                        </p>
+
+                        <ul class="service-list mt-md-5 mt-4">
+                            <li class="service-link">
+                                <a href="Services.html">
+                                    Web Design and Development</a>
+                            </li>
+                            <li class="service-link">
+                                <a href="Services.html">
+                                    Branding Design and Identity</a>
+                            </li>
+                            <li class="service-link">
+                                <a href="Services.html">
+                                    Hosting Website</a>
+                            </li>
+                            <li class="service-link">
+                                <a href="Services.html">
+                                    Art, Logo, SVG & Illustration</a>
+                            </li>
+                            <li class="service-link">
+                                <a href="Services.html">
+                                    Editing Website</a>
+                            </li>
+                        </ul>
+                        <a href="Services.html" class="btn btn-style btn-empty p-0">
+                            View my all services<span></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-5">
+                        <div class="position-relative">
+                            <img src="about.png" alt="About Myself" class="radius-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="homeblock2" id="skills">
+        <div class="midd py-5">
+            <div class="container py-lg-5 py-md-3 HomePageSkills">
+                <div class="row">
+                    <div class="col-lg-6 align-self">
+                        <div class="position-relative px-lg-5 mx-lg-0 mx-md-5 image-padding">
+                            <img src="skills.png" alt="skills" class="radius-image img-fluid">
+                            <div class="position-absolute-images">
+                                <img src="file.png" class="img-fluid pos-img" alt="file" />
+                                <img src="file1.png" class="img-fluid pos-img1" alt="file1" />
+                                <img src="file2.png" class="img-fluid pos-img2" alt="file2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                        <span class="text">My Featured Skills</span>
+                        <h3 class="title-big">I'm using <span>top leading</span> design methods.</h3>
+                        <p class="mt-4">I Specialize in Branding and Strategy, and am passionate about creating and
+                            designing Awesome Website. And I always ready to impress the Client with my Creativity and
+                            Designing. </p>
+                        <div class="skills-bars mt-5">
+                            <div class="progress-info">
+                                <h6 class="progress-tittle">
+                                    HTML</h6>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-info">
+                                <h6 class="progress-tittle">
+                                    CSS</h6>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-info">
+                                <h6 class="progress-tittle">
+                                    JavaScript </h6>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-info mb-0">
+                                <h6 class="progress-tittle">
+                                    Responsiveness </h6>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="homeblock3" id="awards">
+        <div class="midd py-5">
+            <div class="container py-lg-5 py-md-3 HomePageAwards">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="text">My Achievements</span>
+                        <h3 class="title-big">
+                            Professional Achievements <span> I've reached.</span> </h3>
+                        <p class="mt-4">Personal Achievement. Made 10+ Project on different designs and for different
+                            purposes. </p>
+                        <div class="reward-list mt-5">
+                            <div class="reward-item">
+                                <div class="reward-item-photo"><img src="Success.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Web design Achievement</span>
+                                    <p class="reward-item-descr">
+                                        For Best Design Website </p>
+                                </div>
+                            </div>
+                            <div class="reward-item">
+                                <div class="reward-item-photo"><img src="Win Together.jpg" alt=""
+                                        class="img-fluid"></div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Inovative Design Achievement</span>
+                                    <p class="reward-item-descr">
+                                        For Most Loved Web Designing </p>
+                                </div>
+                            </div>
+                            <div class="reward-item">
+                                <div class="reward-item-photo"><img src="Cup.jpg" alt="" class="img-fluid"></div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Creative Design </span>
+                                    <p class="reward-item-descr">
+                                        For Best Project Design </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self mt-lg-0 mt-md-5 mt-4">
+                        <div class="position-relative px-lg-5 mx-lg-0 mx-md-5 image-padding">
+                            <img src="awards.png" alt="awards" class="radius-image img-fluid">
+                            <div class="position-absolute-images">
+                                <img src="award.png" class="img-fluid pos-img" alt="award" />
+                                <img src="award1.png" class="img-fluid pos-img1" alt="award1" />
+                                <img src="award2.png" class="img-fluid pos-img2" alt="award2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients" id="skills">
+        <div class="midd py-5">
+            <div class="container py-lg-5 py-md-3 HomePageTestimonials">
+                <div class="row">
+                    <div class="col-lg-6 align-self">
+                        <div class="position-relative px-lg-5">
+                            <img src="clients.png" alt="clients" class="radius-image img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-5">
+                        <span class="text">Testimonials</span>
+                        <h3 class="title-big">
+                            What my <span>clients think</span> about me </h3>
+                        <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q>I Love your creativity. The minimal and abstract aesthetic you used in
+                                                that logo is really effective in encompassing the company's motto.</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="team1.jpg" class="img-fluid"
+                                                    alt="client-img">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>
+                                                    Ashutosh </h3>
+                                                <p class="indentity">
+                                                    Kolkata </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q>To be honest, I don't know how you manage to do such a good job every
+                                                single time. Very well done!</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="team2.jpg" class="img-fluid"
+                                                    alt="client-img">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>
+                                                    Arsh </h3>
+                                                <p class="indentity">
+                                                    Chandigarh </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q> The one creative I always love to watch is you. Your work is a joy to
+                                                witness. Good job!</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="team3.jpg" class="img-fluid"
+                                                    alt="client-img">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>
+                                                    Himanshu </h3>
+                                                <p class="indentity">
+                                                    Patna</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q>Be proud of the fact that you have the power to rise above any situation
+                                                and deliver the best results no matter the circumstances. Excellent
+                                                work!</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="team4.jpg" class="img-fluid"
+                                                    alt="client-img">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>
+                                                    Amrit </h3>
+                                                <p class="indentity">
+                                                    Pune </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="homeblock3" id="clients">
+        <div class="midd py-5">
+            <div class="container py-lg-5 py-md-3 HomePagePartners">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="text">My Clients and Partners</span>
+                        <h3 class="title-big">
+                            Clients / Partners and <span> Collaborations.</span> </h3>
+                        <p class="mt-4">Last year, I've been fortunate to work with and for people from some amazing
+                            organizations.</p>
+
+                        <div class="reward-list mt-5">
+
+                            <div class="reward-item">
+                                <div class="reward-item-photo">
+                                    10+ </div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Total Clients</span>
+                                    <p class="reward-item-descr">
+                                        over 4 states </p>
+                                </div>
+                            </div>
+
+                            <div class="reward-item">
+                                <div class="reward-item-photo">
+                                    85% </div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Sensitive feedback</span>
+                                    <p class="reward-item-descr">
+                                        For Responsiveness </p>
+                                </div>
+                            </div>
+
+                            <div class="reward-item">
+                                <div class="reward-item-photo">
+                                    15+ </div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">Trusted Clients</span>
+                                    <p class="reward-item-descr">
+                                        Featued by top rankers </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self text-center mt-lg-0 mt-md-5 mt-4">
+                        <div class="images">
+                            <img src="client1.png" class="img-fluid" alt="client1" />
+                            <img src="client2.png" class="img-fluid" alt="client2" />
+                            <img src="client3.png" class="img-fluid" alt="client3" />
+                            <img src="client4.png" class="img-fluid" alt="client4" />
+                            <img src="client5.png" class="img-fluid" alt="client5" />
+                            <img src="client6.png" class="img-fluid" alt="client6" />
+                            <img src="client7.png" class="img-fluid" alt="client7" />
+                            <img src="client8.png" class="img-fluid" alt="client8" />
+                            <img src="client9.png" class="img-fluid" alt="client9" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactblock" id="contact">
+        <div class="midd py-5">
+            <div class="container py-lg-4 py-md-3 HPContactSection">
+                <div class="contact-heading text-center">
+                    <span class="text">Get in touch with me </span>
+                    <h3 class="title-big">
+                        Are you ready to <span>work together?</span> </h3>
+                    <p class="mt-4">
+                        Let's start a Project! Hire Me. </p>
+                </div>
+                <div class="row mt-md-5 mt-4 pt-lg-3 justify-content-center">
+                    <div class="col-lg-5">
+                        <p>I'm open to any communication! Feel free to contact me any convenient way! I'm always
+                            interested in hearing about new projects and opportunities. </p>
+                        <ul class="address mt-md-5 mt-4">
+                            <li class="mb-3">
+
+                            </li>
+                            <li class="mb-4">
+                                <p><span class="fa fa-envelope-open"></span>
+                                    <a href="mailto: ayushyakmrsingh@gmail.com">
+                                        ayushyakmrsingh@gmail.com</a>
+                                </p>
+                            </li>
+                            <li class="">
+                                <p><span class="fa fa-map-marker"></span> Boring road, Patna <br>Bihar, India. </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm">
+                        <form action="" method="post">
+                            <div class="twice-two">
+                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name"
+                                    required="">
+                                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                                    required="">
+                            </div>
+                            <div class="twice">
+                                <input type="text" class="form-control" name="Subject" id="Subject"
+                                    placeholder="Subject" required="">
+                            </div>
+                            <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                                required=""></textarea>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-secondary btn-style mt-4">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="copyright py-sm-5 py-4 text-center">
+            <div class="container">
+                <p class="copy-footer-29 CopyRights">&copy; 2022 Ayushya. All Rights Reserved.</a>
+                </p>
+            </div>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-angle-up"></span>
+            </button>
+        </section>
+    </footer>
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="theme-change.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="demobar-script.js"></script>
+    <script src="owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-portfolio").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    568: {
+                        items: 2,
+                        nav: false
+                    },
+                    1080: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-testimonial').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+        $(document).ready(function () {
+            autoType(".type-js", 200);
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <script src="bootstrap.min.js"></script>
+    <script src='navigation.js' id='ayouts-navigation-js'></script>
+    <script src='wp-embed.min.js' id='wp-embed-js'></script>
+</body>
+
+</html>
