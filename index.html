@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="CSS-2.css">
     <link rel="stylesheet" href="Style-1.css">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
@@ -20,7 +21,7 @@
                 "concatemoji": "emoji-release.min.js"
             }
         };
-        ! function(e, a, t) {
+        ! function (e, a, t) {
             var n, r, o, i = a.createElement("canvas"),
                 p = i.getContext && i.getContext("2d");
 
@@ -36,9 +37,9 @@
                 t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
             }
             for (o = Array("flag", "emoji"), t.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
                 if (!p || !p.fillText) return !1;
                 switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
                     case "flag":
@@ -48,11 +49,11 @@
                 }
                 return !1
             }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () {
                 t.DOMReady = !0
-            }, t.supports.everything || (n = function() {
+            }, t.supports.everything || (n = function () {
                 t.readyCallback()
-            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
                 "complete" === a.readyState && t.readyCallback()
             })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
         }(window, document, window._wpemojiSettings);
@@ -85,13 +86,14 @@
     </style>
 </head>
 
-<body id="top-gap-fixed-header" class="home page-template page-template-page-templates page-template-template-homepage page-template-page-templatestemplate-homepage-php page page-id-8 no-sidebar">
+<body id="top-gap-fixed-header"
+    class="home page-template page-template-page-templates page-template-template-homepage page-template-page-templatestemplate-homepage-php page page-id-8 no-sidebar">
     <style>
         span.icon.-back span.fa {
             position: static;
             color: #e6ebff;
         }
-        
+
         #DemoBar.demo-bar {
             top: 0;
             right: 0;
@@ -103,7 +105,7 @@
             border-top-left-radius: 9px;
             border-bottom-left-radius: 9px;
         }
-        
+
         #DemoBar.demo-bar a {
             display: block;
             color: #e6ebff;
@@ -113,38 +115,38 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         #DemoBar.demo-bar span.icon {
             display: block;
         }
-        
+
         #DemoBar.demo-bar a:hover {
             opacity: 1;
         }
-        
+
         #DemoBar.demo-bar .icon svg {
             color: #e6ebff;
         }
-        
+
         #DemoBar.demo-bar .responsive-icons {
             margin-top: 30px;
             border-top: 1px solid #41414d;
             padding-top: 40px;
         }
-        
+
         #DemoBar.demo-bar .demo-btns {
             border-top: 1px solid #41414d;
             padding-top: 30px;
         }
-        
+
         #DemoBar.demo-bar .responsive-icons a span.fa {
             font-size: 26px;
         }
-        
+
         #DemoBar.demo-bar .no-margin-bottom {
             margin-bottom: 0;
         }
-        
+
         .toggle-right-sidebar span {
             background: #0D1326;
             width: 50px;
@@ -157,7 +159,7 @@
             cursor: pointer;
             opacity: .5;
         }
-        
+
         .pull-right-demo-bar {
             float: right;
             position: fixed;
@@ -167,7 +169,7 @@
             z-index: 99999;
             text-align: center;
         }
-        
+
         #right-sidebar {
             width: 90px;
             position: fixed;
@@ -181,7 +183,7 @@
             transition: all .5s ease-in-out;
             overflow-y: auto;
         }
-        
+
         .hide-right-bar-notifications {
             margin-right: -300px !important;
             -webkit-transition: all .3s ease-in-out;
@@ -189,32 +191,35 @@
             -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
         }
-        
+
         @media (max-width: 992px) {
             #DemoBar.demo-bar a.desktop-mode {
                 display: none;
             }
         }
-        
+
         @media (max-width: 767px) {
             #DemoBar.demo-bar a.tablet-mode {
                 display: none;
             }
         }
-        
+
         @media (max-width: 568px) {
             #DemoBar.demo-bar a.mobile-mode {
                 display: none;
             }
+
             #DemoBar.demo-bar .responsive-icons {
                 margin-top: 0px;
                 border-top: none;
                 padding-top: 0px;
             }
+
             #right-sidebar,
             .pull-right-demo-bar {
                 width: 90px;
             }
+
             #DemoBar.demo-bar .no-margin-bottom-mobile {
                 margin-bottom: 0;
             }
@@ -228,20 +233,34 @@
                         <span>My Portfolio</span>
                     </a>
                 </h1>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                    aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul id="primary-menu" class="navbar-nav ml-auto">
-                        <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-17 nav-item active"><a href="#" class="nav-link active">Home</a></li>
-                        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item"><a href="#about" class="nav-link">My Portfolio</a></li>
-                        <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19 nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link-19" aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <li id="menu-item-17"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-17 nav-item active">
+                            <a href="#" class="nav-link active">Home</a></li>
+                        <li id="menu-item-18"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item"><a
+                                href="#about" class="nav-link">My Portfolio</a></li>
+                        <li id="menu-item-19"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19 nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                id="navbar-dropdown-menu-link-19" aria-haspopup="true" aria-expanded="false">Pages</a>
                             <div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-19">
-                                <a href="Blogs.html" target="_blank" class="dropdown-item" id="menu-item-22">Blog Posts</a>
-                                <a href="Projects.html" target="_blank" class="dropdown-item" id="menu-item-20">My Projects</a></div>
+                                <a href="Blogs.html" target="_blank" class="dropdown-item" id="menu-item-22">Blog
+                                    Posts</a>
+                                <a href="Projects.html" target="_blank" class="dropdown-item" id="menu-item-20">My
+                                    Projects</a>
+                            </div>
                         </li>
-                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21 nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <li id="menu-item-21"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21 nav-item"><a
+                                href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -259,12 +278,12 @@
                     <nav class="navigation">
                         <div class="theme-switch-wrapper">
                             <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox">
-                        <div class="mode-container">
-                            <i class="gg-sun"></i>
-                            <i class="gg-moon"></i>
-                        </div>
-                    </label>
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
                         </div>
                     </nav>
                 </div>
@@ -275,20 +294,22 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
 
                 <div class="modal-body">
                     <div class="modal__content">
                         <a class="navbar-brand"> <span>My Portfolio </span></a>
-                        <p class="mt-md-3 mt-2">I Would Love to make your Ideas real. Contact me and we will discuss your projects! </p>
+                        <p class="mt-md-3 mt-2">I Would Love to make your Ideas real. Contact me and we will discuss
+                            your projects! </p>
 
                         <img src="images/banner.png" alt="" class="img-fluid mt-5">
 
                         <div class="widget-social-icons mt-sm-5 mt-4">
                             <ul class="icon-rounded address">
-                                 <li class="mt-2">
+                                <li class="mt-2">
                                     <p><a href="mailto:ayushyakmrsingh@gmail.com">
-												ayushyakmrsingh@gmail.com</a></p>
+                                            ayushyakmrsingh@gmail.com</a></p>
                                 </li>
 
                             </ul>
@@ -309,11 +330,12 @@
                                         <i class="fab fa-linkedin"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.github.com/" class="github" target="_blank">
+                                    <a href="https://github.com/ayushyasingh" class="github" target="_blank">
                                         <i class="fab fa-github-square"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/ayushyakmrsingh" class="instagram" target="_blank">
+                                    <a href="https://www.instagram.com/ayushyakmrsingh" class="instagram"
+                                        target="_blank">
                                         <i class="fab fa-instagram-square"></i></a>
                                 </li>
 
@@ -336,7 +358,9 @@
                         Hello, <span class="type-js">
                             <span class="text-js">I'm Ayushya Singh</span>
                         </span><br>I'm working as a Web Developer.</h1>
-                    <p class="mx-lg-5">I Love <strong>Coding</strong> and <strong>Programming</strong> and have been working on my Portfolio since 2022. I can give your business a new Creative start right now! </p>
+                    <p class="mx-lg-5">I Love <strong>Coding</strong> and <strong>Programming</strong> and have been
+                        working on my Portfolio since 2022. I can give your business a new Creative start right now!
+                    </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-lg-auto col-md-10">
@@ -361,7 +385,7 @@
                             <i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.github.com/" class="github" target="_blank">
+                        <a href="https://github.com/ayushyasingh" class="github" target="_blank">
                             <i class="fab fa-github-square"></i></a>
                     </li>
                     <li>
@@ -380,34 +404,37 @@
                     <div class="col-lg-6">
                         <span class="text">My Services</span>
                         <h3 class="title-big">
-                            <span>Build your brand</span> and grow your business </h3>
-                        <p class="mt-4">I can give your business a new creative start right away! You can download my resume in order to learn the details of my professional life as a designer and entrepreneur. </p>
+                            <span>Build your brand</span> and grow your business
+                        </h3>
+                        <p class="mt-4">I can give your business a new creative start right away! You can download my
+                            resume in order to learn the details of my professional life as a designer and entrepreneur.
+                        </p>
 
                         <ul class="service-list mt-md-5 mt-4">
                             <li class="service-link">
                                 <a href="Services.html">
-                        Web Design and Development</a>
+                                    Web Design and Development</a>
                             </li>
                             <li class="service-link">
                                 <a href="Services.html">
-                        Branding Design and Identity</a>
+                                    Branding Design and Identity</a>
                             </li>
                             <li class="service-link">
                                 <a href="Services.html">
-                        Hosting Website</a>
+                                    Hosting Website</a>
                             </li>
                             <li class="service-link">
                                 <a href="Services.html">
-                        Art, Logo, SVG & Illustration</a>
+                                    Art, Logo, SVG & Illustration</a>
                             </li>
                             <li class="service-link">
                                 <a href="Services.html">
-                        Editing Website</a>
+                                    Editing Website</a>
                             </li>
                         </ul>
                         <a href="Services.html" class="btn btn-style btn-empty p-0">
-                                    View my all services<span></span>
-                                </a>
+                            View my all services<span></span>
+                        </a>
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-5">
                         <div class="position-relative">
@@ -435,13 +462,16 @@
                     <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
                         <span class="text">My Featured Skills</span>
                         <h3 class="title-big">I'm using <span>top leading</span> design methods.</h3>
-                        <p class="mt-4">I Specialize in Branding and Strategy, and am passionate about creating and designing Awesome Website. And I always ready to impress the Client with my Creativity and Designing. </p>
+                        <p class="mt-4">I Specialize in Branding and Strategy, and am passionate about creating and
+                            designing Awesome Website. And I always ready to impress the Client with my Creativity and
+                            Designing. </p>
                         <div class="skills-bars mt-5">
                             <div class="progress-info">
                                 <h6 class="progress-tittle">
                                     HTML</h6>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +479,8 @@
                                 <h6 class="progress-tittle">
                                     CSS</h6>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -457,7 +488,8 @@
                                 <h6 class="progress-tittle">
                                     JavaScript </h6>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -465,7 +497,8 @@
                                 <h6 class="progress-tittle">
                                     Responsiveness </h6>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -483,10 +516,12 @@
                         <span class="text">My Achievements</span>
                         <h3 class="title-big">
                             Professional Achievements <span> I've reached.</span> </h3>
-                        <p class="mt-4">Personal Achievement. Made 10+ Project on different designs and for different purposes. </p>
+                        <p class="mt-4">Personal Achievement. Made 10+ Project on different designs and for different
+                            purposes. </p>
                         <div class="reward-list mt-5">
                             <div class="reward-item">
-                                <div class="reward-item-photo"><img src="images/Success.jpg" alt="" class="img-fluid"></div>
+                                <div class="reward-item-photo"><img src="images/Success.jpg" alt="" class="img-fluid">
+                                </div>
                                 <div class="reward-item-detail">
                                     <span class="reward-item-title">Web design Achievement</span>
                                     <p class="reward-item-descr">
@@ -494,7 +529,8 @@
                                 </div>
                             </div>
                             <div class="reward-item">
-                                <div class="reward-item-photo"><img src="images/Win Together.jpg" alt="" class="img-fluid"></div>
+                                <div class="reward-item-photo"><img src="images/Win Together.jpg" alt=""
+                                        class="img-fluid"></div>
                                 <div class="reward-item-detail">
                                     <span class="reward-item-title">Inovative Design Achievement</span>
                                     <p class="reward-item-descr">
@@ -543,10 +579,12 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <q>I Love your creativity. The minimal and abstract aesthetic you used in that logo is really effective in encompassing the company's motto.</q>
+                                            <q>I Love your creativity. The minimal and abstract aesthetic you used in
+                                                that logo is really effective in encompassing the company's motto.</q>
                                         </blockquote>
                                         <div class="testi-des">
-                                            <div class="test-img"><img src="images/team1.jpg" class="img-fluid" alt="client-img">
+                                            <div class="test-img"><img src="images/team1.jpg" class="img-fluid"
+                                                    alt="client-img">
                                             </div>
                                             <div class="peopl align-self">
                                                 <h3>
@@ -562,10 +600,12 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <q>To be honest, I don't know how you manage to do such a good job every single time. Very well done!</q>
+                                            <q>To be honest, I don't know how you manage to do such a good job every
+                                                single time. Very well done!</q>
                                         </blockquote>
                                         <div class="testi-des">
-                                            <div class="test-img"><img src="images/team2.jpg" class="img-fluid" alt="client-img">
+                                            <div class="test-img"><img src="images/team2.jpg" class="img-fluid"
+                                                    alt="client-img">
                                             </div>
                                             <div class="peopl align-self">
                                                 <h3>
@@ -581,10 +621,12 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <q> The one creative I always love to watch is you. Your work is a joy to witness. Good job!</q>
+                                            <q> The one creative I always love to watch is you. Your work is a joy to
+                                                witness. Good job!</q>
                                         </blockquote>
                                         <div class="testi-des">
-                                            <div class="test-img"><img src="images/team3.jpg" class="img-fluid" alt="client-img">
+                                            <div class="test-img"><img src="images/team3.jpg" class="img-fluid"
+                                                    alt="client-img">
                                             </div>
                                             <div class="peopl align-self">
                                                 <h3>
@@ -600,10 +642,13 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <q>Be proud of the fact that you have the power to rise above any situation and deliver the best results no matter the circumstances. Excellent work!</q>
+                                            <q>Be proud of the fact that you have the power to rise above any situation
+                                                and deliver the best results no matter the circumstances. Excellent
+                                                work!</q>
                                         </blockquote>
                                         <div class="testi-des">
-                                            <div class="test-img"><img src="images/team4.jpg" class="img-fluid" alt="client-img">
+                                            <div class="test-img"><img src="images/team4.jpg" class="img-fluid"
+                                                    alt="client-img">
                                             </div>
                                             <div class="peopl align-self">
                                                 <h3>
@@ -629,7 +674,8 @@
                         <span class="text">My Clients and Partners</span>
                         <h3 class="title-big">
                             Clients / Partners and <span> Collaborations.</span> </h3>
-                        <p class="mt-4">Last year, I've been fortunate to work with and for people from some amazing organizations.</p>
+                        <p class="mt-4">Last year, I've been fortunate to work with and for people from some amazing
+                            organizations.</p>
 
                         <div class="reward-list mt-5">
 
@@ -694,10 +740,11 @@
                 </div>
                 <div class="row mt-md-5 mt-4 pt-lg-3 justify-content-center">
                     <div class="col-lg-5">
-                        <p>I'm open to any communication! Feel free to contact me any convenient way! I'm always interested in hearing about new projects and opportunities. </p>
+                        <p>I'm open to any communication! Feel free to contact me any convenient way! I'm always
+                            interested in hearing about new projects and opportunities. </p>
                         <ul class="address mt-md-5 mt-4">
                             <li class="mb-3">
-                                
+
                             </li>
                             <li class="mb-4">
                                 <p><span class="fa fa-envelope-open"></span>
@@ -713,13 +760,17 @@
                     <div class="col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm">
                         <form action="" method="post">
                             <div class="twice-two">
-                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
-                                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email" required="">
+                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name"
+                                    required="">
+                                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                                    required="">
                             </div>
                             <div class="twice">
-                                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject" required="">
+                                <input type="text" class="form-control" name="Subject" id="Subject"
+                                    placeholder="Subject" required="">
                             </div>
-                            <textarea name="Message" class="form-control" id="Message" placeholder="Message" required=""></textarea>
+                            <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                                required=""></textarea>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-secondary btn-style mt-4">Send Message</button>
                             </div>
@@ -736,8 +787,8 @@
                 </p>
             </div>
             <button onclick="topFunction()" id="movetop" title="Go to top">
-      <span class="fa fa-angle-up"></span>
-    </button>
+                <span class="fa fa-angle-up"></span>
+            </button>
         </section>
     </footer>
     <button onclick="topFunction()" id="movetop" title="Go to top">
@@ -767,7 +818,7 @@
     <script src="demobar-script.js"></script>
     <script src="owl.carousel.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#owl-demo1").owlCarousel({
                 loop: true,
                 nav: false,
@@ -786,7 +837,7 @@
         })
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#owl-portfolio").owlCarousel({
                 loop: true,
                 margin: 20,
@@ -810,7 +861,7 @@
         })
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.owl-testimonial').owlCarousel({
                 loop: true,
                 margin: 0,
@@ -854,13 +905,13 @@
             var amntOfChars = text.length;
             var newString = "";
             thhis.text("|");
-            setTimeout(function() {
+            setTimeout(function () {
                 thhis.css("opacity", 1);
                 thhis.prev().removeAttr("style");
                 thhis.text("");
                 for (var i = 0; i < amntOfChars; i++) {
-                    (function(i, char) {
-                        setTimeout(function() {
+                    (function (i, char) {
+                        setTimeout(function () {
                             newString += char;
                             thhis.text(newString);
                         }, i * typingSpeed);
@@ -868,19 +919,19 @@
                 }
             }, 1500);
         }
-        $(document).ready(function() {
+        $(document).ready(function () {
             autoType(".type-js", 200);
         });
     </script>
     <script>
-        $(function() {
-            $('.navbar-toggler').click(function() {
+        $(function () {
+            $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             })
         });
     </script>
     <script>
-        $(window).on("scroll", function() {
+        $(window).on("scroll", function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 80) {
@@ -889,14 +940,14 @@
                 $("#site-header").removeClass("nav-fixed");
             }
         });
-        $(".navbar-toggler").on("click", function() {
+        $(".navbar-toggler").on("click", function () {
             $("header").toggleClass("active");
         });
-        $(document).on("ready", function() {
+        $(document).on("ready", function () {
             if ($(window).width() > 991) {
                 $("header").removeClass("active");
             }
-            $(window).on("resize", function() {
+            $(window).on("resize", function () {
                 if ($(window).width() > 991) {
                     $("header").removeClass("active");
                 }
